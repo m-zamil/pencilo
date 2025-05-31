@@ -1,0 +1,76 @@
+h1,
+h2,
+h3 {
+  color: #1b1b1b;
+}
+h1 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+}
+p {
+  font-family: var(--font-urban);
+  font-size: 25px;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  color: #1b1b1b;
+}
+.content {
+  padding: 100px 0;
+}
+ol {
+  counter-reset: term;
+  padding-left: 0;
+  list-style: none;
+}
+ol li {
+  counter-increment: term;
+}
+ol li h2::before {
+  content: counter(term) ". ";
+}
+ol p,
+ol h2 {
+  margin-top: 30px;
+}
+body {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+@media (max-width: 1024px) {
+  body {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+  .content {
+    padding: 50px 0;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 18px;
+  }
+
+  ol h2 {
+    margin-top: 25px;
+  }
+  ol p {
+    margin-top: 14px;
+  }
+}
