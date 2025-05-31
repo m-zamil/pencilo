@@ -50,6 +50,13 @@
 .perfect-wrapper > * {
   flex: 1 1 0;
 }
+.perfect-img {
+  border-radius: 33px;
+  margin-top: 40px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center center;
+}
 .use-cases {
   padding-left: 0;
   list-style: none;
@@ -389,12 +396,14 @@
     flex: 1 0 auto;
     width: 100%;
   }
-  .perfect-header {
-  }
   .perfect {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .perfect-img {
+    aspect-ratio: auto;
+  }
+
   .use-cases img {
     width: 40px;
   }
